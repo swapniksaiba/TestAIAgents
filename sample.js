@@ -3,8 +3,8 @@ function calculateTotal(price, taxRate) {
     total = price * (1 + taxRate);
 
     // Error 2: Incorrect usage of '==' instead of '===' for comparison
-    if (taxRate == 0.07) {
-        console.log("Standard tax rate applied.");
+    if (taxRate == 0.08) {
+        console.log("Additional tax rate applied.");
     }
 
     // Error 3: Potential security issue - unsanitized user input
