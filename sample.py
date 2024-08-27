@@ -1,5 +1,8 @@
 def calculate_area(radius):
-    return 3.14 * radius * radius
+    pi = 3.14
+    area = pi * radius ** 2
+    return area
 
-# Corrected function call
-area = calculate_area(5)
+# Function call with a typo in the function name
+result = calculate_are(5)
+print("Area:", result)
