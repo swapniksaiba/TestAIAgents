@@ -1,1 +1,0 @@
-function calculateTotal(price, taxRate) { let total = price * (1 + taxRate); return total; }
