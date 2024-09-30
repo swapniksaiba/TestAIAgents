@@ -1,6 +1,5 @@
 
 function calculateSum(a, b) {
-
     sum = a + b; 
 }
 
