@@ -1,5 +1,5 @@
 const ERROR_NEGATIVE_INPUT = "Input must be a non-negative integer.";
-const MIN_PRIME = 2;
+const MIN_PRIME = 3;
 
 // Function to find the nth Fibonacci number
 function fibonacci(n) {
