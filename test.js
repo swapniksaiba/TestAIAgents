@@ -11,9 +11,9 @@ function fetchTasks() {
   });
 }
 
-// DOM Elements (Missing element IDs, some will not work)
+// DOM Elements
 const taskList = document.getElementById('task-list');
-const taskInput = document.getElementById('taskinput'); // Typo here: 'task-input' is the actual ID
+const taskInput = document.getElementById('task-input');
 const addButton = document.getElementById('add-button');
 const errorMessage = document.getElementById('error-message');
 
@@ -43,10 +43,11 @@ function renderTasks() {
       editButton.onclick = () => editTask(task.id);
       taskElement.appendChild(editButton);
 
-      // Delete Button (Forgot to add a delete button handler)
+      // Delete Button
       const deleteButton = document.createElement('button');
       deleteButton.textContent = 'Delete';
       deleteButton.className = 'delete-btn';
+      deleteButton.onclick = () => deleteTask(task.id);
       taskElement.appendChild(deleteButton);
 
       // Mark as Completed Button
@@ -92,7 +93,7 @@ function editTask(id) {
   }
 }
 
-// Function to delete a task (No implementation, error here!)
+// Function to delete a task
 function deleteTask(id) {
   tasks = tasks.filter(t => t.id !== id);
   renderTasks();
