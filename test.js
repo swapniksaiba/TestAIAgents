@@ -74,7 +74,6 @@ function addTask(text) {
     text: text,
     completed: false,
   };
-
   tasks.push(newTask);
   renderTasks();
   taskInput.value = ''; // Clear the input field
