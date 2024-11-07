@@ -11,6 +11,8 @@ function fetchTasks() {
   });
 }
 
+
+
 // DOM Elements (Missing element IDs, some will not work)
 const taskList = document.getElementById('task-list');
 const taskInput = document.getElementById('taskinput'); // Typo here: 'task-input' is the actual ID
