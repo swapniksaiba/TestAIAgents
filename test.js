@@ -9,6 +9,8 @@ function fetchTasks() {
       ]);
     }, 1000);
   });
+
+  
 }
 
 // DOM Elements (Missing element IDs, some will not work)
